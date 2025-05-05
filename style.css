@@ -1,0 +1,115 @@
+/* Genel gövde ve arka plan */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #413e3e; /* siyaha yakın gri */
+  color: #f0f0f0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Konteyner sayfayı ortalar */
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Ana kutu */
+#main {
+  background-color: #aa8080;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  width: 90%;
+  max-width: 700px;
+}
+
+/* Başlık */
+.header-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header-wrapper > h4 {
+  font-size: 24px;
+  margin: 0;
+  color: #ffffff;
+}
+
+/* Döviz çevirme alanları */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Miktar input */
+#amount {
+  width: 30%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Select menüler */
+select {
+  width: 30%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+/* Ok ikonu */
+.fa-arrow-right {
+  font-size: 18px;
+  align-self: center;
+  color: #ccc;
+}
+
+/* Sonuç alanı */
+#result {
+  margin-top: 30px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  background-color: #f5f5f5;
+}
+
+/* Telif */
+span {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  width: 100%;
+  color: #272525;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #amount,
+  select {
+    width: 100%;
+  }
+
+  .fa-arrow-right {
+    display: none;
+  }
+}

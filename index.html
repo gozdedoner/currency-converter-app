@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Döviz Kuru Uygulaması</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+        <div id="main">
+            <div class="header-wrapper">
+                <h4>Döviz Kuru Çevirici</h4>
+            </div>
+
+            <div class="content-wrapper">
+                <input id="amount" type="number" placeholder="Miktar">
+                <select  id="firstCurrencyOption">
+                    <option selected>USD</option>
+                    <option >Euro</option>
+                    <option selected >TRY</option>
+                    <option >JPY</option>
+                    <option >BGN</option>
+                    <option >CZK</option>
+                    <option >BHD</option>
+                    <option >BOV</option>
+                    <option >DZD</option>
+                    <option >XCD</option>
+                    <option >CHF</option>
+                    <option >CHE</option>
+                    <option >ISK</option>
+                    <option >KRW</option>
+                    <option >CAD</option>
+                    <option >KGS</option>
+                    <option >KZT</option>
+
+                </select>
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <select  id="secondCurrencyOption">
+                    <option selected>USD</option>
+                    <option >Euro</option>
+                    <option >TRY</option>
+                    <option >JPY</option>
+                    <option >BGN</option>
+                    <option >CZK</option>
+                    <option >BHD</option>
+                    <option >BOV</option>
+                    <option >DZD</option>
+                    <option >XCD</option>
+                    <option >CHF</option>
+                    <option >CHE</option>
+                    <option >ISK</option>
+                    <option >KRW</option>
+                    <option >CAD</option>
+                    <option >KGS</option>
+                    <option >KZT</option>
+
+                </select>
+
+                <input type="number" id="result" readonly placeholder="Sonuç">
+
+                <span> &copy; Gözde Döner</span>
+
+            </div>
+
+
+        </div>
+
+    </div>
+     <script src="currency.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
